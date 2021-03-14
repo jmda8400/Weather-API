@@ -1,4 +1,4 @@
-A web page with an integrated weather forecast system. Ain't much but it's honest work.
+A Django based webpage with an integrated weather forecast system.
 
 Resources:
 
@@ -11,3 +11,5 @@ Resources:
 >https://www.w3schools.com/bootstrap4/default.asp
 
 >https://www.udemy.com/course/front-end-web-development/
+
+>https://openweathermap.org/
