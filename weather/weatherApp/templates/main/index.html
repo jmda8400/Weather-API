@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+      <title> Web Course Project // RMJ </title>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="css,javascript,django,bootstrap"
+      <meta name="author" content="Juan Manuel Díaz Arbués">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+      <script src="{% static 'js/main.js' %}"></script>  
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navbar-total">
+        <a class="navbar-brand" href="#"><h2 id="site-title">Random Mountaineering Journal</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>    
+          </ul>
+        </div>  
+        <a href="https://openweathermap.org" class="navbar-tech">OpenWeather - Get Your API</a>
+      </nav>
+      <br>
+      <br>
+      
+      <main>
+        <section>
+          <div class="container mt-3">
+            <h2>Beautiful Mountains</h2>
+            <div id="myCarousel" class="carousel slide">
+            
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ul>
+              
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'images/img1.png' %}" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/img2.png' %}" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/img3.png' %}" width="1100" height="500">
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" data-target="#myCarousel">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" data-target="#myCarousel">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="top-stories">
+          <h2>Check the Weather</h2>
+          <nav class="navbar navbar-expand-sm justify-content-center">
+            <form method="post" class="col-md">
+              {% csrf_token %}
+              <div class="input-group">
+              <input type="text" class="form-control" name="city" placeholder="Choose Your City ...">
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+              </div>
+              <form>
+          </nav>
+          <br>
+          <div class="row">
+            {% if country_code and coordinate and temp and pressure and humidity %}
+            <div class="col d-flex justify-content-center">
+              <div class=" card text-white bg-dark mb-6">
+              <div class=" card-body">
+                <h4><span class="badge badge-primary">Country Code :</span> {{country_code}}</h4>
+                <h4><span class="badge badge-primary">Coordinates [X,Y] :</span> {{coordinate}}</h4>
+                <h4><span class="badge badge-primary">Temperature in Celsius :</span> {{temp}}</h4>
+                <h4><span class="badge badge-primary">Pressure :</span> {{pressure}} mmHg</h4>
+                <h4><span class="badge badge-primary">Humidity : </span> {{humidity}}%</h4>
+                <h4><span class="badge badge-primary">Forecast : </span> {{main}} <img src="http://openweathermap.org/img/w/{{icon}}.png" alt="Image" style="width:70px"></h4>
+                <h4><span class="badge badge-primary">Description : </span> {{description}}</h4>
+              </div>
+              {% endif %}
+            </div>
+        </section>
+
+        <section id="top-stories">
+          <article>
+            <div class="article-image" style="background:url(./images/img1.png)"></div>
+            <a href="https://www.theguardian.com/world/2021/jan/16/nepalese-team-makes-first-successful-winter-ascent-of-k2"><h3> Nepalese team of sherpas summit K2 winter for the first time. </h3></a>
+            <h5><p> Many died, few had the opportunity to summit the K2 peak for the first time in winter.</p></h5>
+          </article>
+          <article>
+            <div class="article-image" style="background:url(./images/img2.png)"></div>
+            <a href="http://maxneale.blogspot.com/2016/08/gear-list-for-denali-mountaineering.html?m=1"><h3> A gear list for summiting Denali. </h3></a>
+            <h5><p> Many useful things to know and stuff to have before trying to summit eight thousand meter mountains. </p></h5>
+          </article>
+        </section>
+      </main>
+    </body>
+</html>
