@@ -21,11 +21,7 @@ A Django based web page with a bootstrap based carousel and an integrated weathe
 
 >https://csitba.github.io/curso-web-backend/clases/clase-1.html#c%C3%B3mo-empezar-con-django
 
->https://www.w3schools.com/bootstrap4/default.asp
-
 >https://www.udemy.com/course/front-end-web-development/
-
->https://openweathermap.org/
 
 ## Author
 
