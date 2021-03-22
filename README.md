@@ -1,6 +1,19 @@
-A Django based webpage with an integrated weather forecast system.
+A web page with a bootstrap based carousel and an integrated weather API.
 
-Resources:
+## Getting Started
+
+
+
+## Built With
+
+- CSS
+- HTML
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Bootstrap4](https://getbootstrap.com/) A free, open-source CSS framework directed at responsive, mobile-first front-end web development.
+- [Django](https://www.djangoproject.com/) Python based Web framework for perfectionists with deadlines.
+- [Openweather](https://openweathermap.org/) This is where i got my weather API from.
+
+## Resources
 
 >https://www.youtube.com/watch?v=E-n5QAuQSr8
 
