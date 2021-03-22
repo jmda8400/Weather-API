@@ -1,4 +1,4 @@
-A web page with a bootstrap based carousel and an integrated weather API.
+A Django based web page with a bootstrap based carousel and an integrated weather API.
 
 ## Getting Started
 
@@ -9,9 +9,9 @@ A web page with a bootstrap based carousel and an integrated weather API.
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Bootstrap4](https://getbootstrap.com/) A free, open-source CSS framework directed at responsive, mobile-first front-end web development.
-- [Django](https://www.djangoproject.com/) Python based Web framework for perfectionists with deadlines.
-- [Openweather](https://openweathermap.org/) This is where i got my weather API from.
+- [Bootstrap4](https://getbootstrap.com/) - A free, open-source CSS framework directed at responsive, mobile-first front-end web development.
+- [Django](https://www.djangoproject.com/) - Python based web framework for perfectionists with deadlines.
+- [Openweather](https://openweathermap.org/) - This is where i got my weather API from.
 
 ## Resources
 
