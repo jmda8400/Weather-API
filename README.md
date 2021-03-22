@@ -26,3 +26,7 @@ A web page with a bootstrap based carousel and an integrated weather API.
 >https://www.udemy.com/course/front-end-web-development/
 
 >https://openweathermap.org/
+
+## Author
+
+Juan Manuel Díaz Arbués
