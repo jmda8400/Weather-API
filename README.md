@@ -1,4 +1,4 @@
-A Django based web page with a bootstrap based carousel and an integrated weather API.
+_A web page with a Bootstrap based carousel and an integrated weather API._
 
 ## Getting Started
 
