@@ -15,9 +15,9 @@ A Django based web page with a bootstrap based carousel and an integrated weathe
 
 ## Resources
 
->https://www.youtube.com/watch?v=E-n5QAuQSr8
+>[Django Project: Build Weather App | From Scratch](https://www.youtube.com/watch?v=E-n5QAuQSr8)
 
->https://www.youtube.com/watch?v=oPuYTGyW4dU
+>[Updating the Django Weather App [Part 2]](https://www.youtube.com/watch?v=oPuYTGyW4dU)
 
 >https://csitba.github.io/curso-web-backend/clases/clase-1.html#c%C3%B3mo-empezar-con-django
 
