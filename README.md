@@ -2,7 +2,11 @@ _A web page with a Bootstrap based carousel and an integrated weather API._
 
 ## Getting Started
 
+Virtual environment:
 
+'
+pip install django
+'
 
 ## Built With
 
