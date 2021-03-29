@@ -16,6 +16,9 @@ virtualenv ./cs_env
 ```
 python manage.py makemigrations && python manage.py migrate
 ```
+```
+python manage.py runserver
+```
 
 ## Built With
 
