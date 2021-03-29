@@ -1,6 +1,6 @@
 _A web page with a Bootstrap based carousel and an integrated weather API._
 
-# :warning: Under development :warning:
+### :warning: Under development :warning:
 
 ## Getting Started
 
