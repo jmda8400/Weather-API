@@ -13,6 +13,9 @@ virtualenv ./cs_env
 ```
 ./cs_env/Scripts/activate.ps1
 ```
+```
+python manage.py makemigrations && python manage.py migrate
+```
 
 ## Built With
 
